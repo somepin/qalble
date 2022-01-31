@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "MX_Only")(type "KiCad")(uri "${KIPRJMOD}/MX_Alps_Hybrid/MX_Only.pretty")(options "")(descr ""))
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "adafruit")(type "KiCad")(uri "${KIPRJMOD}/adafruit.pretty")(options "")(descr ""))
+  (lib (name "somepin-logo")(type "KiCad")(uri "${KIPRJMOD}/somepin-logo.pretty")(options "")(descr ""))
+  (lib (name "backsilk")(type "KiCad")(uri "${KIPRJMOD}/backsilk.pretty")(options "")(descr ""))
+)
