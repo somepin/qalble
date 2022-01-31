@@ -1,0 +1,3 @@
+[submodule "firmware/zmk-config"]
+	path = firmware/zmk-config
+	url = https://github.com/somepin/zmk-config/
