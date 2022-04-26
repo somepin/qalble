@@ -31,7 +31,7 @@ The PCB is designed to be hand-soldered with no PCBA services required. Mouser l
 | Part                                                                                                                                                                                                                                   | Quantity | Notes                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------- |
 | 1N4148 Diodes ([Through hole](https://www.mouser.com/ProductDetail/onsemi-Fairchild/1N4148?qs=sGAEpiMZZMueQxo7L%2FBPyGk1oWHOqz4M)/[SMD](https://www.mouser.com/ProductDetail/Panjit/1N4148W_R1_00001?qs=sPbYRqrBIVnqVztCqPNVrw%3D%3D)) | 36       | Either through hole or SMD SOD-123 diodes are supported                                       |
-| [Adafruit ItsyBitsy nRF53840](https://www.mouser.com/ProductDetail/Adafruit/4481?qs=sGAEpiMZZMv0NwlthflBi0wxcEySjLivFAoxskokx6U%3D)                                                                                                    | 1        | Bluetooth module daughterboard                                                                |
+| [Adafruit ItsyBitsy nRF52840](https://www.mouser.com/ProductDetail/Adafruit/4481?qs=sGAEpiMZZMv0NwlthflBi0wxcEySjLivFAoxskokx6U%3D)                                                                                                    | 1        | Bluetooth module daughterboard                                                                |
 | [Adafruit LiIon/LiPoly Backpack](https://www.mouser.com/ProductDetail/Adafruit/2124?qs=GURawfaeGuBUa48u6WxTSg%3D%3D)                                                                                                                   | 1        | Charging circuit daughterboard                                                                |
 | [Adafruit LiPo Battery 3.7V 500mAh](https://www.mouser.com/ProductDetail/Adafruit/1578?qs=sGAEpiMZZMsKEdP9slC0Ye7SoJ6cuRArlH3mXRQt04M%3D)                                                                                              | 1        | Adafruit battery must be used due to LiIon/LiPoly Backpack JST connector polarity             |
 | [EC11 Rotary Encoder](https://www.mouser.com/ProductDetail/Bourns/PEC11R-4215F-S0024?qs=Zq5ylnUbLm5lAqmKF80wzQ%3D%3D)                                                                                                                  | 1        | Optional, 15mm height is reccomended                                                          |
@@ -137,6 +137,8 @@ For wireless/ZMK, use the `&bootloader` keycode while the keyboard is switched o
 For wired/QMK, use Bootmagic by holding the top-left most key (Q) while plugging the keyboard in to launch the bootloader.
 
 ### Issues
+
+* The current hardware (ItsyBitsy nRF52840+LiPo Backpack) does not support getting the battery level in ZMK, so the battery will always appear fully charged in Windows despite it discharging
 
 * ZMK sometimes loses connection over bluetooth
   * I fix this by resetting the board via the power switch and quickly switching profiles
