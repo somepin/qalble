@@ -105,11 +105,11 @@ Fork my [ZMK config repo](https://github.com/somepin/zmk-config/tree/qalble) and
 
 ### Vial-QMK (Wired - ItsyBitsy RP2040)
 
-Flash the `qal_vial.uf2` file in [Releases](https://github.com/somepin/qalble/releases) to the ItsyBitsy RP2040.
+Flash the `somepin_qal_vial.uf2` file in [Releases](https://github.com/somepin/qalble/releases) to the ItsyBitsy RP2040.
 
 #### Manual Compilation
 
-Use the `rp2040` branch of [vial-qmk](https://github.com/vial-kb/vial-qmk/tree/rp2040).
+Use the `rp2040-fix2` branch of [vial-qmk](https://github.com/vial-kb/vial-qmk/tree/rp2040-fix2).
 
 Copy/paste the files in `/firmware/vial-qmk` to `vial-qmk/keyboards/qal`.
 
