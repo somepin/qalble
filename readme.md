@@ -118,12 +118,6 @@ Compile via `make` in the top directory of the firmware after setting up your bu
 make qal:vial
 ```
 
-Convert firmware into uf2 format:
-```
-python3 util/uf2conv.py .build/qalble_vial.bin -f 0xe48bff56 -b 0x10000000 -o qalble_vial.uf2
-```
-I had to use the conversion script manually since using `make qal:vial:uf2` would cause an error.
-
 ### Flashing
 
 #### First flash
