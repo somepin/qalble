@@ -14,7 +14,7 @@ The _BLE_ is a misnomer since the keyboard can be wired or wireless depending on
 
 ## Project Structure
 
-`/case` - STLs to print and STEPs for modification. The `nonsplit` case is untested.
+`/case` - STLs to print and STEPs for modification. The `nonsplit` case is untested, and the `flat` case only works with wired builds.
 
 `/firmware` - ZMK and Vial-QMK firmware files.
 
